@@ -26,4 +26,9 @@ export class LoginComponent {
   logout(){
     this.oauthService.logOut();
   }
+
+   token(){
+    let claims:any=this.oauthService.getIdentityClaims();
+    return claims ? claims:null
+  }
 }
