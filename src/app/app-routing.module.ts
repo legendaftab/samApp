@@ -4,6 +4,7 @@ import { LoginComponent } from './page/login/login.component';
 import { LayoutComponent } from './page/layout/layout.component';
 import { HomeComponent } from './page/home/home.component';
 import { authGuard } from './core/guard/auth.guard';
+import { DashboardComponent } from './page/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent,
+      },
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
       },
     
  

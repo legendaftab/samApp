@@ -19,7 +19,7 @@ export class LoginComponent {
       responseType: 'token',
       redirectUri: 'https://socialsizzle.heroku.com/auth/',
     })
-    this.oauthService.setStorage(sessionStorage);
+   
   }
 
   configureSingleSignOn(){
@@ -30,14 +30,11 @@ export class LoginComponent {
 
   login(){
  this.oauthService.initImplicitFlow();
- this.router.navigateByUrl('home');
+ this.router.navigateByUrl('dashboard');
   }
   logout(){
     this.oauthService.logOut();
   }
 
-  //  token(){
-  //   let claims:any=this.oauthService.getIdentityClaims();
-  //   return claims ? claims:null
-  // }
+  
 }

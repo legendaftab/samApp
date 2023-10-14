@@ -20,9 +20,8 @@ export class HomeComponent {
    this.homeS.getData().subscribe((res:any)=>{
     this.info=res.data;
    })
-
- 
-
 }
+
+
 
 }

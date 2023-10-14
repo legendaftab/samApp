@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: "poppins";
 }
-body {
+.parent {
     background:linear-gradient(360deg, black 20%, rgb(185, 0, 127) 100%);
 }
 .container {
